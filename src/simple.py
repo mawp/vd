@@ -33,6 +33,7 @@ for step in range(201):
         print(step, sess.run(W), sess.run(b))
 
 # Plot
+print('Plotting...')
 plt.plot(x_data, y_data, '.')
 plt.plot(np.array([0,1]), np.array([0,1]) * sess.run(W) + sess.run(b))
 plt.plot(np.array([0,1]), np.array([0,1]) * 0.1 + 0.3, 'r')
