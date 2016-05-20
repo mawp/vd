@@ -1,4 +1,6 @@
 # Get MNIST data
+# Explanation of this network from Kaggle:
+# https://www.kaggle.com/kakauandme/digit-recognizer/tensorflow-deep-nn/notebook
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
