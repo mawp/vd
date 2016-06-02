@@ -21,8 +21,10 @@ This is a repository for playing with deep learning and tensorflow.
 ## Other stuff
 * Pod-cast on tensorflow
     * http://softwareengineeringdaily.com/2015/12/15/tensorflow-with-greg-corrado/
+
 ## vids
 * https://www.youtube.com/watch?v=n1ViNeWhC24
 * https://www.youtube.com/watch?v=ghEmQSxT6tw
+
 ## Deeplearning datasets 
 * http://deeplearning.net/datasets/
