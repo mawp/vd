@@ -25,6 +25,11 @@ This is a repository for playing with deep learning and tensorflow.
 ## vids
 * https://www.youtube.com/watch?v=n1ViNeWhC24
 * https://www.youtube.com/watch?v=ghEmQSxT6tw
+* https://www.youtube.com/watch?v=l2dVjADTEDU
 
 ## Deeplearning datasets 
 * http://deeplearning.net/datasets/
+
+## Papers
+* https://papers.nips.cc/ Many good machine learning and ANN papers
+* https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf network w. 60M parameters
