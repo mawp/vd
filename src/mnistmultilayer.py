@@ -69,16 +69,15 @@ accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 sess = tf.Session()
 with sess.as_default():   # or `with sess:` to close on exit
-    assert sess is tf.get_default_session()
-    sess.run(tf.initialize_all_variables())
-    print()
-    for i in range(20000):
-      batch = mnist.train.next_batch(50)
-      if i%100 == 0:
-        train_accuracy = accuracy.eval(session=sess, feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
-        print("step %d, training accuracy %g"%(i, train_accuracy))
+  assert sess is tf.get_default_session()
+  sess.run(tf.initialize_all_variables())
+  for i in range(200):
+    batch = mnist.train.next_batch(50)
+    if i % 100 == 0:
+      fd = {x:batch[0], y_: batch[1], keep_prob: 1.0}
+      train_accuracy = accuracy.eval(session=sess, feed_dict=fd)
+      print("step %d, training accuracy %g"%(i, train_accuracy))
       train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
-
-    print("test accuracy %g"%accuracy.eval(feed_dict={
-        x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
+    fd = {x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}
+    print("test accuracy %g"%accuracy.eval(feed_dict=fd))
 
